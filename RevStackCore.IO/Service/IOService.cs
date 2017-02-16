@@ -15,112 +15,112 @@ namespace RevStackCore.IO
 			_repository = repository;
 		}
 
-		public FileEntity Add(FileEntity entity)
+		public virtual FileEntity Add(FileEntity entity)
 		{
 			return _repository.Add(entity);
 		}
 
-		public Task<FileEntity> AddAsync(FileEntity entity)
+		public virtual Task<FileEntity> AddAsync(FileEntity entity)
 		{
 			return Task.FromResult(Add(entity));
 		}
 
-		public void Delete(FileEntity entity)
+		public virtual void Delete(FileEntity entity)
 		{
 			_repository.Delete(entity);
 		}
 
-		public Task DeleteAsync(FileEntity entity)
+		public virtual Task DeleteAsync(FileEntity entity)
 		{
 			return Task.Run(() => Delete(entity));
 		}
 
-		public IQueryable<FileEntity> Find(Expression<Func<FileEntity, bool>> predicate)
+		public virtual IQueryable<FileEntity> Find(Expression<Func<FileEntity, bool>> predicate)
 		{
 			return _repository.Find(predicate);
 		}
 
-		public Task<IQueryable<FileEntity>> FindAsync(Expression<Func<FileEntity, bool>> predicate)
+		public virtual Task<IQueryable<FileEntity>> FindAsync(Expression<Func<FileEntity, bool>> predicate)
 		{
 			return Task.FromResult(Find(predicate));
 		}
 
-		public IEnumerable<FileEntity> Get()
+		public virtual IEnumerable<FileEntity> Get()
 		{
 			return _repository.Get();
 		}
 
-		public IEnumerable<FileEntity> Get(IOFileEncodingType type)
+		public virtual IEnumerable<FileEntity> Get(IOFileEncodingType type)
 		{
 			return _repository.Get(type);
 		}
 
-		public IEnumerable<FileEntity> Get(string path, string searchPattern, SearchOption searchOption)
+		public virtual IEnumerable<FileEntity> Get(string path, string searchPattern, SearchOption searchOption)
 		{
 			return _repository.Get(path,searchPattern,searchOption);
 		}
 
-		public Task<IEnumerable<FileEntity>> GetAsync()
+		public virtual Task<IEnumerable<FileEntity>> GetAsync()
 		{
 			return Task.FromResult(Get());
 		}
 
-		public Task<IEnumerable<FileEntity>> GetAsync(IOFileEncodingType type)
+		public virtual Task<IEnumerable<FileEntity>> GetAsync(IOFileEncodingType type)
 		{
 			return Task.FromResult(Get(type));
 		}
 
-		public Task<IEnumerable<FileEntity>> GetAsync(string path, string searchPattern, SearchOption searchOption)
+		public virtual Task<IEnumerable<FileEntity>> GetAsync(string path, string searchPattern, SearchOption searchOption)
 		{
 			return Task.FromResult(Get(path, searchPattern, searchOption));
 		}
 
-		public FileEntity GetById(string id)
+		public virtual FileEntity GetById(string id)
 		{
 			return _repository.GetById(id);
 		}
 
-		public FileEntity GetById(string id, IOFileEncodingType type)
+		public virtual FileEntity GetById(string id, IOFileEncodingType type)
 		{
 			return _repository.GetById(id,type);
 		}
 
-		public FileEntity GetById(string id, IOFileEncodingType type, string format)
+		public virtual FileEntity GetById(string id, IOFileEncodingType type, string format)
 		{
 			return _repository.GetById(id, type, format);
 		}
 
-		public FileEntity GetById(string id, IOFileEncodingType type, IODataStringFormat format)
+		public virtual FileEntity GetById(string id, IOFileEncodingType type, IODataStringFormat format)
 		{
 			return _repository.GetById(id, type, format);
 		}
 
-		public Task<FileEntity> GetByIdAsync(string id)
+		public virtual Task<FileEntity> GetByIdAsync(string id)
 		{
 			return Task.FromResult(GetById(id));
 		}
 
-		public Task<FileEntity> GetByIdAsync(string id, IOFileEncodingType type)
+		public virtual Task<FileEntity> GetByIdAsync(string id, IOFileEncodingType type)
 		{
 			return Task.FromResult(GetById(id,type));
 		}
 
-		public Task<FileEntity> GetByIdAsync(string id, IOFileEncodingType type, string format)
+		public virtual Task<FileEntity> GetByIdAsync(string id, IOFileEncodingType type, string format)
 		{
 			return Task.FromResult(GetById(id, type,format));
 		}
 
-		public Task<FileEntity> GetByIdAsync(string id, IOFileEncodingType type, IODataStringFormat format)
+		public virtual Task<FileEntity> GetByIdAsync(string id, IOFileEncodingType type, IODataStringFormat format)
 		{
 			return Task.FromResult(GetById(id, type, format));
 		}
 
-		public FileEntity Update(FileEntity entity)
+		public virtual FileEntity Update(FileEntity entity)
 		{
 			return _repository.Update(entity);
 		}
 
-		public Task<FileEntity> UpdateAsync(FileEntity entity)
+		public virtual Task<FileEntity> UpdateAsync(FileEntity entity)
 		{
 			return Task.FromResult(Update(entity));
 		}

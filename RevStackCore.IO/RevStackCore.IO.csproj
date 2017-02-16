@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.5</TargetFramework>
 	<PackageId>RevStackCore.IO</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <Authors>S. Francis</Authors>
     <Description>IO generic repository pattern abstraction</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
