@@ -1,14 +1,14 @@
 {
   "name": "RevStackCore.IO",
-  "version": "1.0.1",
-  "description": "IO generic repository pattern abstraction",
+  "version": "1.0.2",
+  "description": "IO repository pattern abstraction",
   "main": "RevStackCore.IO.sln",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RevStackCore/Pattern.git"
+    "url": "https://github.com/RevStackCore/IO.git"
   },
   "author": "S. Francis",
   "license": "MIT",
