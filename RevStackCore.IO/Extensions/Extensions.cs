@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+
 namespace RevStackCore.IO
 {
 	public static class Extensions
@@ -36,6 +38,21 @@ namespace RevStackCore.IO
 					default:
 					return "";			   
 			}
+		}
+
+		public static string ToBase64String(this Stream src)
+		{
+			var mem = new MemoryStream();
+			src.CopyTo(mem);
+			return Convert.ToBase64String(mem.ToArray());
+		}
+
+		public static string ToBase64String(this Stream src, IODataStringFormat format)
+		{
+			var mem = new MemoryStream();
+			src.CopyTo(mem);
+			string base64 = Convert.ToBase64String(mem.ToArray());
+			return format.ToDataStringFormat() + base64;
 		}
 	}
 }
