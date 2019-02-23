@@ -1,6 +1,6 @@
 {
   "name": "RevStackCore.IO",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "IO repository pattern abstraction",
   "main": "RevStackCore.IO.sln",
   "scripts": {

@@ -3,11 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.5</TargetFramework>
 	<PackageId>RevStackCore.IO</PackageId>
-    <PackageVersion>1.0.3</PackageVersion>
+    <PackageVersion>1.0.4</PackageVersion>
     <Authors>S. Francis</Authors>
     <Description>IO generic repository pattern abstraction</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>Net Standard 1.5 release</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/RevStackCore/IO.git</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/RevStackCore/IO/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>https://s3.amazonaws.com/revstack/icons/revstackcore-64x64.png</PackageIconUrl>
     <Copyright>Copyright 2017</Copyright>
     <PackageTags>RevStackCore IO Repository</PackageTags>		
   </PropertyGroup>
